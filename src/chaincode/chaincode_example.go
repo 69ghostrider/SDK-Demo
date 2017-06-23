@@ -24,6 +24,18 @@ import (
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
+const (
+	UserPrefix	= "USER_"
+	
+)
+
+ type Patient struct {
+                Username  string  `json:"Username"`
+                Name      string  `json:"Name"`
+                DescriptionOfCurrentAilment  string  `json:"DescriptionOfCurrentAilment"`
+                Allergies string  `json:"Allergies"`
+ 
+            }
 // SimpleChaincode example simple Chaincode implementation
 type SimpleChaincode struct {
 }
