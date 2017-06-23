@@ -55,7 +55,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string
 	}
 	fmt.Printf("store user:%s sucessfully", key)
 	return nil,nil*/
- 	/*var A, B string    // Entities
+ 	var A, B string    // Entities
  	var Aval, Bval int // Asset holdings
  	var err error
 
@@ -90,10 +90,10 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string
 	if err != nil {
  		return nil, err
 	}
- 	return nil, nil*/
+ 	return nil, nil
 	
 	
-	A = args[0]
+/*	A = args[0]
 	Aval, err = strconv.Atoi(args[1])
  	if err != nil {
 		return nil, errors.New("Expecting integer value for asset holding")
@@ -119,7 +119,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string
  	if err != nil {
  		return nil, err
 	}
-	return nil, nil
+	return nil, nil*/
 }
 
 // Transaction makes payment of X units from A to B
